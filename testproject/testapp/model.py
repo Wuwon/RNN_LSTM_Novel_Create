@@ -2,7 +2,7 @@ import os
 
 from keras.layers import LSTM, Dropout, TimeDistributed, Dense, Activation, Embedding
 from keras.models import Sequential
-from keras.utils import plot_model
+# from keras.utils import plot_model
 
 
 MODEL_DIR = 'model'
@@ -43,6 +43,6 @@ if __name__ == '__main__':
     model = build_model(16, 64, 50)
     model.summary()
 
-    plot_model(model, to_file='model.png')
+#     plot_model(model, to_file='model.png')
 
     print('사진 저장!')
